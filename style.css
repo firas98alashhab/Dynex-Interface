@@ -213,4 +213,26 @@ body {
   .arame-font {
     margin: 1.8rem !important;
   }
+  .get-started {
+    width: 100% !important;
+    background: #5738df !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: #ffffff !important;
+    padding: 0.75rem 4rem 0.75rem 4rem !important;
+    clip-path: polygon(
+      10% 0,
+      100% 0,
+      100% 30%,
+      100% 60%,
+      91% 100%,
+      30% 100%,
+      0 100%,
+      0 40%
+    ) !important;
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 30px !important;
+    border-bottom-left-radius: 10px !important;
+  }
 }
