@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Arame";
+  src: url("fonnts.com-Arame-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+/* page 1 (Get Started Page) */
+
+.p1-body,
+.p2-body {
+  padding: 30px !important;
+}
+
+.p1 {
+  background-image: url(assets/main-background2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  height: 100%;
+  position: relative;
+}
+
+.dynex-label {
+  width: 200px;
+  height: 200px;
+  background-image: url(assets/dynexpng.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+}
+
+.img-placeholder {
+  margin: 0 auto;
+  margin-top: -68px;
+  max-width: 233px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("assets/Drone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-shadow {
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #111222;
+}
+
+.sub-text {
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #111222;
+  max-width: 14rem;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 15.5px;
+  color: #111222;
+  max-width: 14rem;
+  text-align: center;
+}
+
+.get-started {
+  width: 100%;
+  background: #5738df;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0.75rem 4rem 0.75rem 4rem;
+  clip-path: polygon(
+    10% 0,
+    100% 0,
+    100% 30%,
+    100% 60%,
+    91% 100%,
+    30% 100%,
+    0 100%,
+    0 40%
+  );
+  border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+}
+
+.get-started:hover {
+  background: #3e289c;
+}
+
+.arame-font {
+  font-family: "Arame", sans-serif;
+  color: #585875;
+  font-size: 13px;
+  margin: 3.5rem;
+}
+
+/* responsiveness */
+
+/* Desktop */
+@media (min-width: 1280px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+}
+
+@media (max-width: 940px) {
+  .responsive-dialog {
+    max-width: 30rem !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .responsive-dialog {
+    max-width: 26rem !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .dynex-label {
+    width: 246px;
+    height: 108px;
+    background-image: url(assets/dynex-label-phone.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -12px;
+    left: 52%;
+    transform: translateX(-50%);
+  }
+  .p1-body {
+    padding: 10px !important;
+    font-family: "Figtree", sans-serif;
+  }
+  .img-placeholder {
+    margin-top: 50px !important;
+    max-width: 173px !important;
+    width: 100% !important;
+  }
+  .sub-text {
+    max-width: 100% !important;
+  }
+  .paragraph {
+    max-width: 100% !important;
+  }
+  .arame-font {
+    margin: 2.2rem !important;
+  }
+}
