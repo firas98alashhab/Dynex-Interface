@@ -204,7 +204,7 @@ body {
     overflow-y: auto;
   }
   .full-cont {
-    margin: 75px auto !important;
+    margin-bottom: 75px !important;
   }
   .arame-font {
     margin: 1.8rem !important;
