@@ -31,103 +31,118 @@
       <div
         class="bg-white shadow-lg rounded-lg w-full max-w-xl space-y-6 m-auto responsive-dialog"
       >
-        <div class="flex items-center space-x-3 px-8 pt-8">
-          <!-- Title -->
-          <h1 class="dynex-llm-title">Dynex LLM: Code Generator</h1>
-        </div>
-
-        <p class="p2-paragraph px-8 pb-6">
-          Enter your title and a list of constraints or rules. The quantum bot
-          will generate an executable Python code to be used on Dynex.
-        </p>
-
-        <div class="border-t border-gray-300"></div>
-
-        <form action="#" class="space-y-6 px-3 mt-3 pb-6 scrollable-form">
-          <!-- Title Input -->
-          <div class="px-5">
-            <label
-              for="title"
-              class="block text-gray-700 font-medium required-field sub-titles"
-              >Title</label
-            >
-            <input
-              type="text"
-              id="title"
-              placeholder="enter title"
-              class="outline-none mt-1 block border-2 py-2 px-4 w-full border-gray-200 rounded-md"
-              style="font-size: 14px"
-            />
-            <p class="hint-paragraph mt-2">
-              Enter a title for your computation
-            </p>
+        <div class="responsive-title-box">
+          <div class="flex items-center space-x-3 px-8 pt-8">
+            <!-- Title -->
+            <h1 class="dynex-llm-title">Dynex LLM: Code Generator</h1>
           </div>
 
-          <!-- Constraints and Rules Section -->
-          <div id="rules-container" class="px-5">
-            <label
-              for="rules"
-              class="inline-block text-gray-700 font-medium sub-titles required-field"
-            >
-              Constraints and Rules
-            </label>
-            <i
-              class="fas fa-info-circle text-gray-500 pl-1 transition-transform duration-100 hover:text-indigo-600 hover:scale-105"
-              title="Provide the constraints and rules for your input."
-            ></i>
-            <div id="rules-list">
-              <!-- input logic in JavaScript file and displaying -->
+          <p class="p2-paragraph px-8 pb-6">
+            Enter your title and a list of constraints or rules. The quantum bot
+            will generate an executable Python code to be used on Dynex.
+          </p>
+        </div>
+
+        <div class="border-t border-gray-300 responsive-devider"></div>
+
+        <form
+          action="#"
+          class="space-y-6 px-3 mt-3 pb-6 scrollable-form form-res-screen"
+        >
+          <div>
+            <!-- Title Input -->
+            <div class="px-5">
+              <label
+                for="title"
+                class="block text-gray-700 font-medium required-field sub-titles"
+                >Title</label
+              >
+              <input
+                type="text"
+                id="title"
+                placeholder="enter title"
+                class="outline-none mt-1 block border-2 py-2 px-4 w-full border-gray-200 rounded-md"
+                style="font-size: 14px"
+              />
+              <p class="hint-paragraph mt-2">
+                Enter a title for your computation
+              </p>
             </div>
 
-            <p class="hint-paragraph mt-2">
-              Add/remove rules and conditions as needed. At least 1 rule needed.
-            </p>
-            <button
-              type="button"
-              class="mt-2 bg-black text-white py-1.5 px-6 rounded-md"
-              style="user-select: none"
-              onclick="addRule()"
-            >
-              Add
-            </button>
+            <!-- Constraints and Rules Section -->
+            <div id="rules-container" class="px-5">
+              <label
+                for="rules"
+                class="inline-block text-gray-700 font-medium sub-titles required-field"
+              >
+                Constraints and Rules
+              </label>
+              <i
+                class="fas fa-info-circle text-gray-500 pl-1 transition-transform duration-100 hover:text-indigo-600 hover:scale-105"
+                title="Provide the constraints and rules for your input."
+              ></i>
+              <div id="rules-list">
+                <!-- input logic in JavaScript file and displaying -->
+              </div>
+
+              <p class="hint-paragraph mt-2">
+                Add/remove rules and conditions as needed. At least 1 rule
+                needed.
+              </p>
+              <button
+                type="button"
+                class="mt-2 bg-black text-white py-1.5 px-6 rounded-md"
+                style="user-select: none"
+                onclick="addRule()"
+              >
+                Add
+              </button>
+            </div>
           </div>
 
           <!-- ChatGPT4 Toggle -->
-          <div
-            class="flex items-center space-x-3 pt-10 chatgpt-responsive px-2"
-          >
-            <input type="checkbox" id="check" class="toggle-input" />
-            <label for="check" class="toggle-label">
-              <span class="slider"></span>
-            </label>
-
-            <label for="chatgpt4" class="hint-paragraph">ChatGPT4</label>
-          </div>
-
-          <div class="border-t border-gray-300 mx-5"></div>
-
-          <!-- Terms Checkbox -->
-          <div class="flex space-x-3 pb-10 px-5">
-            <input id="terms" type="checkbox" class="focus:outline-none" />
-            <label for="terms" class="text-gray-700"
-              >I understand this is a Beta application and I agree NOT to use it
-              for generating harmful or malicious code.</label
+          <div class="space-y-4">
+            <div
+              class="flex items-center space-x-3 pt-10 chatgpt-responsive px-2"
             >
-          </div>
+              <input type="checkbox" id="check" class="toggle-input" />
+              <label for="check" class="toggle-label">
+                <span class="slider"></span>
+              </label>
 
-          <!-- Execute Button -->
-          <div class="pb-8 px-5">
-            <a
-              type="submit"
-              class="get-code text-white font-bold"
-              href="javascript:void(0);"
-              onclick="saveFormData(); window.location.href='working-on-your-code.html?from=dynex-code-gen';"
-              >Execute and Get Code</a
-            >
-          </div>
-          <div id="generated-content" class="hidden p2-paragraph">
-            <p class="pl-5 pb-4">Here’s your generated code</p>
-            <div id="code-mirror-editor" class="p-0 w-full"></div>
+              <label for="chatgpt4" class="hint-paragraph">ChatGPT4</label>
+            </div>
+
+            <div class="border-t border-gray-300 mx-5"></div>
+
+            <!-- Terms Checkbox -->
+            <div class="flex space-x-3 pb-10 px-5">
+              <input id="terms" type="checkbox" class="focus:outline-none" />
+              <label for="terms" class="text-gray-700"
+                >I understand this is a Beta application and I agree NOT to use
+                it for generating harmful or malicious code.</label
+              >
+            </div>
+
+            <!-- Execute Button -->
+            <div class="responsive-btn">
+              <div class="px-5">
+                <a
+                  type="submit"
+                  class="get-code text-white font-bold"
+                  href="javascript:void(0);"
+                  onclick="saveFormData(); window.location.href='working-on-your-code.html?from=dynex-code-gen';"
+                  >Execute and Get Code</a
+                >
+              </div>
+              <div
+                id="generated-content"
+                class="hidden p2-paragraph code-reveal"
+              >
+                <p class="pl-5 pb-4">Here’s your generated code</p>
+                <div id="code-mirror-editor" class="p-0 w-full"></div>
+              </div>
+            </div>
           </div>
         </form>
       </div>

@@ -136,7 +136,6 @@ print(measure)
   }
 
   // loading screen duration and logic
-
   function showGeneratedContent() {
     const loadingContainer = document.getElementById("loading");
     const generatedContent = document.getElementById("generated-content");

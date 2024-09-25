@@ -116,6 +116,13 @@ body {
   margin: 1.5rem;
 }
 
+.form-res-screen {
+  padding-bottom: 3rem;
+}
+
+.code-reveal {
+  padding-top: 50px;
+}
 /* page 2 */
 
 .gradient {
@@ -414,6 +421,32 @@ input[type="checkbox"]:checked::after {
 
   .gradient {
     margin-top: auto;
+  }
+  .responsive-devider {
+    display: none;
+  }
+  .form-res-screen {
+    background-image: url(assets/mob-screen-bg.png);
+    padding-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 20px !important;
+  }
+
+  .responsive-title-box {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-btn {
+    margin-bottom: -9px !important;
   }
 }
 
