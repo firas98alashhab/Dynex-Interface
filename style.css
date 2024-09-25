@@ -117,7 +117,7 @@ body {
 }
 
 .form-res-screen {
-  padding-bottom: 3rem;
+  padding-bottom: 3rem !important;
 }
 
 .code-reveal {
@@ -426,6 +426,9 @@ input[type="checkbox"]:checked::after {
     display: none;
   }
   .form-res-screen {
+    padding-bottom: 0px !important;
+  }
+  .form-res-screen {
     background-image: url(assets/mob-screen-bg.png);
     padding-top: 20px;
     background-size: cover;
@@ -437,7 +440,7 @@ input[type="checkbox"]:checked::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem !important;
     margin-bottom: 20px !important;
   }
 
@@ -495,5 +498,8 @@ input[type="checkbox"]:checked::after {
     margin-top: auto;
     padding-top: 85px;
     padding-bottom: 75px;
+  }
+  .form-res-screen {
+    padding-bottom: 3rem !important;
   }
 }
