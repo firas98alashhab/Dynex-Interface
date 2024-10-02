@@ -321,10 +321,6 @@ input[type="checkbox"]:checked::after {
   border-top-right-radius: 36px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: center;
-  will-change: clip-path;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .get-code:hover {
