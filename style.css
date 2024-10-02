@@ -323,14 +323,8 @@ input[type="checkbox"]:checked::after {
   border-bottom-left-radius: 10px;
   text-align: center;
   will-change: clip-path;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .get-code {
-    clip-path: none;
-    -webkit-clip-path: none;
-    border-radius: 10px;
-  }
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .get-code:hover {
