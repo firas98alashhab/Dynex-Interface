@@ -345,9 +345,9 @@ input[type="checkbox"]:checked::after {
 
 /* spinning animation */
 
-.slow-spin {
+/* .slow-spin {
   animation: spin 2.5s linear infinite;
-}
+} */
 
 @keyframes spin {
   from {
