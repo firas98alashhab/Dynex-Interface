@@ -286,6 +286,7 @@ input[type="checkbox"]:checked::after {
   font-size: 15.5px;
   color: #ffffff;
   padding: 1.1rem 2.5rem 1.1rem 2.5rem;
+  -webkit-clip-path: polygon(0 0, 89% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
   clip-path: polygon(0 0, 89% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
   border-top-left-radius: 10px;
   border-top-right-radius: 36px;
@@ -457,30 +458,6 @@ input[type="checkbox"]:checked::after {
   }
   .responsive-btn {
     margin-bottom: -9px !important;
-  }
-  .get-code {
-    width: 100%;
-    background-color: #5738df;
-    font-weight: 500;
-    font-size: 15.5px;
-    color: #ffffff;
-    padding: 1.1rem 2.5rem 1.1rem 2.5rem;
-    clip-path: polygon(
-      0 0,
-      89% 0%,
-      100% 45%,
-      100% 100%,
-      0 100%,
-      0% 50%
-    ) !important;
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 36px !important;
-    border-bottom-right-radius: 10px !important;
-    border-bottom-left-radius: 10px !important;
-  }
-
-  .get-code:hover {
-    background-color: #3e289c;
   }
 }
 
