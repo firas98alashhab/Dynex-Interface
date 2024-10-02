@@ -83,30 +83,26 @@ body {
 }
 
 .get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
   width: 100%;
-  background: #5738df;
-  font-weight: 500;
-  font-size: 18px;
+  height: 50px;
+  background-image: url("./get-started-btn.svg");
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
-  padding: 0.75rem 4rem 0.75rem 4rem;
-  clip-path: polygon(
-    10% 0,
-    100% 0,
-    100% 30%,
-    100% 60%,
-    91% 100%,
-    30% 100%,
-    0 100%,
-    0 40%
-  );
-  border-top-left-radius: 30px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 10px;
+  font-weight: 500;
+  font-size: 15.5px;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
 }
 
 .get-started:hover {
-  background: #3e289c;
+  opacity: 0.8;
 }
 
 .arame-font {
@@ -286,22 +282,7 @@ input[type="checkbox"]:checked::after {
   font-size: 15.5px;
   color: #ffffff;
   padding: 1.1rem 2.5rem 1.1rem 2.5rem;
-  -webkit-clip-path: polygon(
-    0 0,
-    89% 0%,
-    100% 45%,
-    100% 100%,
-    0 100%,
-    0% 50%
-  ) !important;
-  clip-path: polygon(
-    0 0,
-    89% 0%,
-    100% 45%,
-    100% 100%,
-    0 100%,
-    0% 50%
-  ) !important;
+  clip-path: polygon(0 0, 89% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
   border-top-left-radius: 10px;
   border-top-right-radius: 36px;
   border-bottom-right-radius: 10px;
@@ -309,22 +290,27 @@ input[type="checkbox"]:checked::after {
 } */
 
 .get-code {
-  width: 100%;
-  background-color: #5738df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 50%;
+  height: 60px;
+  background-image: url("./Execute-code-btn.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
   font-weight: 500;
   font-size: 15.5px;
-  color: #ffffff;
-  padding: 1.1rem 2.5rem 1.1rem 2.5rem;
-  -webkit-clip-path: polygon(0 0, 89% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
-  clip-path: polygon(0 0, 89% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 36px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
 }
 
 .get-code:hover {
-  background-color: #3e289c;
+  opacity: 0.8;
 }
 
 /* page3 */
@@ -336,18 +322,11 @@ input[type="checkbox"]:checked::after {
   font-size: 15.5px;
   color: #ffffff;
   padding: 1.1rem 2.5rem 1.1rem 2.5rem;
-  clip-path: polygon(
-    0 0,
-    82% 0%,
-    100% 45%,
-    100% 100%,
-    0 100%,
-    0% 50%
-  ) !important;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 33px !important;
-  border-bottom-right-radius: 10px !important;
-  border-bottom-left-radius: 10px !important;
+  clip-path: polygon(0 0, 82% 0%, 100% 45%, 100% 100%, 0 100%, 0% 50%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .get-code1:hover {
@@ -486,7 +465,17 @@ input[type="checkbox"]:checked::after {
       0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
   .responsive-btn {
-    margin-bottom: -9px !important;
+    margin-bottom: -25px !important;
+  }
+
+  .get-started {
+    width: 75%;
+    height: 55px;
+    margin: auto;
+  }
+  .get-code {
+    width: 75%;
+    height: 52px;
   }
 }
 
