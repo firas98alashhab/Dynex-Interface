@@ -323,8 +323,6 @@ input[type="checkbox"]:checked::after {
   border-bottom-left-radius: 10px;
   text-align: center;
   will-change: clip-path;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 @supports (-webkit-touch-callout: none) {
